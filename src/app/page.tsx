@@ -39,7 +39,9 @@ export default function Home() {
                 (rhymes with grug)
             </p>
              <div className="flex justify-center items-center my-8">
-                 <GrugIcon className="h-40 w-40" />
+                <div className="p-2 rounded-full bg-gradient-to-tr from-primary to-pink-400">
+                    <GrugIcon className="h-40 w-40" />
+                </div>
             </div>
             <div className="mt-8 flex gap-4 justify-center">
                 <Button size="lg" asChild><Link href="#tools">View Tools</Link></Button>
