@@ -7,7 +7,7 @@ export function Header() {
       <div className="container flex h-16 max-w-screen-xl items-center justify-between">
         <div className="mr-4 flex items-center">
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="relative p-1 rounded-full bg-gradient-to-tr from-primary to-pink-400/80">
+            <div className="relative p-1 rounded-full bg-gradient-to-tr from-primary to-pink-400">
                 <Dna className="h-6 w-6 text-primary-foreground" />
             </div>
             <span className="font-bold sm:inline-block">
