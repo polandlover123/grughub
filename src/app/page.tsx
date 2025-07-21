@@ -1,11 +1,11 @@
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { GrugIcon } from './contact/grug-icon';
 
 const notes = [
   {
@@ -38,15 +38,8 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 (rhymes with grug)
             </p>
-             <div className="flex justify-center items-center">
-                 <Image
-                    src="https://placehold.co/500x300.png"
-                    alt="Caveman character looking at a modern laptop"
-                    width={500}
-                    height={300}
-                    className="rounded-lg object-cover shadow-2xl shadow-primary/10"
-                    data-ai-hint="caveman character laptop"
-                />
+             <div className="flex justify-center items-center my-8">
+                 <GrugIcon className="h-40 w-40" />
             </div>
             <div className="mt-8 flex gap-4 justify-center">
                 <Button size="lg" asChild><Link href="#tools">View Tools</Link></Button>
