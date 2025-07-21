@@ -19,7 +19,7 @@ const notes = [
   },
   {
     name: "Grug Note Repository",
-    description: "Grug keep all smart notes in big cave. Safe and easy to find.",
+    description: "Even Grug has dumb days. All notes kept here so Grug no forget.",
     href: "#",
   },
 ];
