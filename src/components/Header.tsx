@@ -16,10 +16,10 @@ export function Header() {
         </div>
         <nav className="flex flex-1 items-center space-x-2 justify-end">
           <Button variant="ghost" asChild>
-            <Link href="#templates">Notes</Link>
+            <Link href="#templates">Templates</Link>
           </Button>
           <Button variant="ghost" asChild>
-            <Link href="#contact">Contact</Link>
+            <Link href="#tools">Tools</Link>
           </Button>
         </nav>
       </div>
