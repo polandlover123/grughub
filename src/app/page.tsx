@@ -7,22 +7,22 @@ import { Button } from '@/components/ui/button';
 
 const notes = [
   {
-    name: "Fact-checked notes",
-    description: "We aim for accuracy in everything we include.",
+    name: "Grug Note Generation",
+    description: "Grug use big brain to make smart notes from rock scratchings.",
     image: "https://placehold.co/100x100.png",
-    dataAiHint: "check mark"
+    dataAiHint: "brain gears"
   },
   {
-    name: "Easy to Read",
-    description: "Notes are formatted clearly to help you learn.",
+    name: "Grug Note Chat",
+    description: "Talk to Grug about notes. Grug help you understand hard things.",
     image: "https://placehold.co/100x100.png",
-    dataAiHint: "open book"
+    dataAiHint: "speech bubble"
   },
   {
-    name: "Covers Everything",
-    description: "We try to include everything you need to pass.",
+    name: "Grug Note Repository",
+    description: "Grug keep all smart notes in big cave. Safe and easy to find.",
     image: "https://placehold.co/100x100.png",
-    dataAiHint: "documents stack"
+    dataAiHint: "cave entrance"
   },
 ];
 

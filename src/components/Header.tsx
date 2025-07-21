@@ -22,18 +22,20 @@ export function Header() {
            <Button variant="link" size="sm" className="text-muted-foreground">
              Beta 0.0.9
            </Button>
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <Github className="h-4 w-4" />
-              <span className="sr-only">GitHub</span>
-            </a>
-          </Button>
-           <Button variant="ghost" size="icon" asChild>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <Instagram className="h-4 w-4" />
-              <span className="sr-only">Instagram</span>
-            </a>
-          </Button>
+          <div className="flex items-center space-x-1">
+            <Button variant="ghost" size="icon" asChild>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <Github className="h-4 w-4" />
+                <span className="sr-only">GitHub</span>
+              </a>
+            </Button>
+             <Button variant="ghost" size="icon" asChild>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <Instagram className="h-4 w-4" />
+                <span className="sr-only">Instagram</span>
+              </a>
+            </Button>
+          </div>
         </nav>
       </div>
     </header>
