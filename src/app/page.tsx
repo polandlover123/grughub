@@ -2,21 +2,25 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 const notes = [
   {
     name: "Grug Note Generation",
     description: "Grug use big brain to make smart notes from rock scratchings.",
+    href: "#",
   },
   {
     name: "Grug Note Chat",
     description: "Talk to Grug about notes. Grug help you understand hard things.",
+    href: "#",
   },
   {
     name: "Grug Note Repository",
     description: "Grug keep all smart notes in big cave. Safe and easy to find.",
+    href: "#",
   },
 ];
 
@@ -56,13 +60,20 @@ export default function Home() {
         <section id="tools" className="mb-16 md:mb-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {notes.map((note) => (
-              <Card key={note.name} className="bg-card border-border/50 p-4 transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
+              <Card key={note.name} className="bg-card border-border/50 p-4 transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 flex flex-col">
                 <CardHeader className="p-2">
                     <CardTitle className="text-xl">{note.name}</CardTitle>
                 </CardHeader>
-                <CardContent className="p-2 pt-0">
+                <CardContent className="p-2 pt-0 flex-grow">
                     <p className="text-muted-foreground">{note.description}</p>
                 </CardContent>
+                <CardFooter className="p-2 pt-4 mt-auto">
+                    <Button asChild className="w-full">
+                        <Link href={note.href}>
+                            Go to Tool <ArrowRight className="ml-2" />
+                        </Link>
+                    </Button>
+                </CardFooter>
               </Card>
             ))}
           </div>
