@@ -10,19 +10,19 @@ const contactLinks = [
     name: 'Instagram',
     href: 'https://www.instagram.com/cavemansoftware/',
     handle: '@cavemansoftware',
-    icon: <Instagram className="h-6 w-6" />,
+    icon: <Instagram className="h-6 w-6 text-primary" />,
   },
   {
     name: 'Website',
     href: 'https://cavemansoftware.org',
     handle: 'Cavemansoftware.org',
-    icon: <Globe className="h-6 w-6" />,
+    icon: <Globe className="h-6 w-6 text-primary" />,
   },
   {
     name: 'GitHub',
     href: 'https://github.com/cavemansoftware',
     handle: 'github.com/cavemansoftware',
-    icon: <Github className="h-6 w-6" />,
+    icon: <Github className="h-6 w-6 text-primary" />,
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ContactPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {contactLinks.map((link) => (
-            <Card key={link.name} className="bg-card border-border/50 transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
+            <Card key={link.name} className="bg-card border-border/50 transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/20">
               <CardHeader className="flex flex-row items-center justify-between pb-2">
                 <CardTitle className="text-xl font-bold">{link.name}</CardTitle>
                 {link.icon}
