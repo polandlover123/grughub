@@ -49,7 +49,7 @@ export default function Home() {
 
         <section id="tools" className="mb-24">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold tracking-tight text-primary">Grug's Mighty Tools</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-primary">Grug's Big Rocks</h2>
             <p className="text-muted-foreground mt-2">Tools to make you less dumb.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
