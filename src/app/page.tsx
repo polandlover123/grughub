@@ -10,9 +10,9 @@ import { GrugIcon } from './contact/grug-icon';
 
 const notes = [
   {
-    name: "Grug Note Generation",
-    description: "Grug uses big brain to create cool notes",
-    href: "https://grugnotes.cavemansoftware.org",
+    name: "Grug Note Repository",
+    description: "Made by hand, by your classmates. For when Grug brain is full of rock.",
+    href: "https://study.cavemansoftware.org",
   },
   {
     name: "Grug Note Chat",
@@ -20,9 +20,9 @@ const notes = [
     href: "https://grugchat.cavemansoftware.org",
   },
   {
-    name: "Grug Note Repository",
-    description: "Made by hand, by your classmates. For when Grug brain is full of rock.",
-    href: "https://study.cavemansoftware.org",
+    name: "Grug Note Generation",
+    description: "Grug uses big brain to create cool notes",
+    href: "https://grugnotes.cavemansoftware.org",
   },
 ];
 
