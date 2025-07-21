@@ -31,7 +31,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-16">
-        <section className="relative text-center mb-24 animate-in fade-in duration-700">
+        <section className="relative text-center mb-24 animate-in fade-in duration-300">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-96 radial-glow -z-10" />
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-primary">
                 Caveman Software
@@ -43,8 +43,8 @@ export default function Home() {
                 <GrugIcon className="h-40 w-40" />
             </div>
             <div className="mt-8 flex gap-4 justify-center">
-                <Button size="lg" variant="outline" asChild><Link href="#tools">View Tools</Link></Button>
-                <Button size="lg" variant="outline" asChild><Link href="/contact">Contact Grug</Link></Button>
+                <Button size="lg" variant="outline" asChild className="rounded-full"><Link href="#tools">View Tools</Link></Button>
+                <Button size="lg" variant="default" asChild className="rounded-full"><Link href="/contact">Contact Grug</Link></Button>
             </div>
         </section>
 
