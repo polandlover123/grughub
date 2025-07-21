@@ -4,12 +4,12 @@ export function Footer() {
       <div className="container">
         <div className="flex justify-center items-center">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-2 text-primary">Caveman Notes</h3>
+            <h3 className="text-2xl font-bold mb-2 text-primary">Caveman Software</h3>
             <p className="text-muted-foreground mb-4 max-w-sm mx-auto">
-              Quality notes for modern learners.
+              Quality software for modern cavemen.
             </p>
             <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Caveman Notes. All rights reserved.
+              &copy; {new Date().getFullYear()} Caveman Software. All rights reserved.
             </p>
           </div>
         </div>

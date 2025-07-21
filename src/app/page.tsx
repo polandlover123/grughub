@@ -9,20 +9,14 @@ const notes = [
   {
     name: "Grug Note Generation",
     description: "Grug use big brain to make smart notes from rock scratchings.",
-    image: "https://placehold.co/100x100.png",
-    dataAiHint: "brain gears"
   },
   {
     name: "Grug Note Chat",
     description: "Talk to Grug about notes. Grug help you understand hard things.",
-    image: "https://placehold.co/100x100.png",
-    dataAiHint: "speech bubble"
   },
   {
     name: "Grug Note Repository",
     description: "Grug keep all smart notes in big cave. Safe and easy to find.",
-    image: "https://placehold.co/100x100.png",
-    dataAiHint: "cave entrance"
   },
 ];
 
@@ -36,13 +30,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div className='z-10'>
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-primary">
-                        Notes
+                        Caveman Software
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-md mx-auto md:mx-0">
-                        These are quality notes fact-checked and written by reliable sources.
+                        (rhymes with grug)
                     </p>
                     <div className="mt-8 flex gap-2 justify-center md:justify-start">
-                        <Button size="lg">Notes</Button>
+                        <Button size="lg" asChild><Link href="#tools">View Tools</Link></Button>
                         <Button size="lg" variant="secondary">Contact</Button>
                     </div>
                 </div>
@@ -59,7 +53,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="notes" className="mb-16 md:mb-24">
+        <section id="tools" className="mb-16 md:mb-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {notes.map((note) => (
               <Card key={note.name} className="bg-card border-border/50 p-4 transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">

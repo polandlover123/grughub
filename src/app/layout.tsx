@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Caveman Software Hub',
+  title: 'Caveman Software',
   description: 'Your hub for robust Vitepress templates and powerful development tools.',
 };
 
