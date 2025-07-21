@@ -10,19 +10,19 @@ import { GrugIcon } from './contact/grug-icon';
 
 const notes = [
   {
-    name: "Grug Note Generation",
-    description: "Grug uses big brain to create cool notes",
-    href: "#",
+    name: "Grug Note Repository",
+    description: "Made by hand, by your classmates. For when Grug brain is full of rock.",
+    href: "https://study.cavemansoftware.org",
   },
   {
     name: "Grug Note Chat",
     description: "Confused? Ask computer questions. It talk back. Like rock, but smarter.",
-    href: "#",
+    href: "https://grugchat.cavemansoftware.org",
   },
   {
-    name: "Grug Note Repository",
-    description: "Made by hand, by your classmates. For when Grug brain is full of rock.",
-    href: "#",
+    name: "Grug Note Generation",
+    description: "Grug uses big brain to create cool notes",
+    href: "https://grugnotes.cavemansoftware.org",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                     <Button asChild className="w-full">
-                        <Link href={note.href}>
+                        <Link href={note.href} target="_blank" rel="noopener noreferrer">
                             Go to Tool <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                     </Button>
