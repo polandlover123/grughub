@@ -19,7 +19,7 @@ const notes = [
   },
   {
     name: "Grug Note Repository",
-    description: "Even Grug has dumb days. All notes kept here so Grug no forget.",
+    description: "Even Grug has dumb days. This tool is made by hand, by your classmates, so Grug no forget.",
     href: "#",
   },
 ];
@@ -60,7 +60,6 @@ export default function Home() {
         <section id="tools" className="mb-16 md:mb-24">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold tracking-tight text-primary">Our Tools</h2>
-            <p className="text-lg text-muted-foreground">These are made by hand, by your classmates.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {notes.map((note) => (
