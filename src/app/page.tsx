@@ -43,7 +43,7 @@ export default function Home() {
                 <GrugIcon className="h-40 w-40" />
             </div>
             <div className="mt-8 flex gap-4 justify-center">
-                <Button size="lg" asChild><Link href="#tools">View Tools</Link></Button>
+                <Button size="lg" variant="outline" asChild><Link href="#tools">View Tools</Link></Button>
                 <Button size="lg" variant="outline" asChild><Link href="/contact">Contact Grug</Link></Button>
             </div>
         </section>
