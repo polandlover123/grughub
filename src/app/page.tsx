@@ -4,26 +4,32 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Download, ExternalLink } from 'lucide-react';
+import { ArrowRight, ExternalLink, Code, CheckCircle, Pilcrow } from 'lucide-react';
 
-const templates = [
+const tools = [
   {
-    name: "Minimalist Documentation",
-    description: "A clean, content-focused template perfect for project documentation and knowledge bases. No frills, just clarity.",
+    name: "Prehistoric Prettier",
+    description: "An opinionated code formatter that works with many languages. Keep your codebase clean and consistent, the caveman way.",
     image: "https://placehold.co/600x400.png",
-    dataAiHint: "software documentation",
+    dataAiHint: "code editor",
+    icon: Code,
+    link: "#",
   },
   {
-    name: "Tech Blog Pro",
-    description: "A feature-rich template for technical bloggers. Includes syntax highlighting, tagging, and a sleek, readable layout.",
+    name: "JSON Validator Rock",
+    description: "Validate and format your JSON files with the rugged reliability of a trusty rock. Finds errors with brute force.",
     image: "https://placehold.co/600x400.png",
-    dataAiHint: "tech blog",
+    dataAiHint: "json data",
+    icon: CheckCircle,
+    link: "#",
   },
   {
-    name: "API Reference",
-    description: "An organized template designed specifically for API documentation. Three-column layout for easy navigation.",
+    name: "Markdown Mammoth",
+    description: "A powerful, yet simple Markdown editor for crafting your project documentation. As mighty as its namesake.",
     image: "https://placehold.co/600x400.png",
-    dataAiHint: "api reference",
+    dataAiHint: "markdown document",
+    icon: Pilcrow,
+    link: "#",
   },
 ];
 
@@ -42,41 +48,39 @@ export default function Home() {
           </p>
           <div className="mt-8">
             <Button size="lg" asChild>
-              <Link href="#templates">
-                Explore Templates <ArrowRight className="ml-2" />
+              <Link href="#tools">
+                Explore Tools <ArrowRight className="ml-2" />
               </Link>
             </Button>
           </div>
         </section>
 
-        <section id="templates" className="mb-16 md:mb-24">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-headline">Vitepress Templates</h2>
+        <section id="tools" className="mb-16 md:mb-24">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-headline">Development Tools</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {templates.map((template) => (
-              <Card key={template.name} className="flex flex-col transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10">
-                <CardHeader>
-                    <CardTitle>{template.name}</CardTitle>
-                    <CardDescription>{template.description}</CardDescription>
+            {tools.map((tool) => (
+              <Card key={tool.name} className="flex flex-col transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10">
+                <CardHeader className="flex-row gap-4 items-center">
+                  <tool.icon className="w-10 h-10 text-primary" />
+                  <div>
+                    <CardTitle>{tool.name}</CardTitle>
+                    <CardDescription>{tool.description}</CardDescription>
+                  </div>
                 </CardHeader>
                 <CardContent className="flex-grow">
                     <Image
-                        src={template.image}
-                        alt={template.name}
+                        src={tool.image}
+                        alt={tool.name}
                         width={600}
                         height={400}
                         className="rounded-md object-cover"
-                        data-ai-hint={template.dataAiHint}
+                        data-ai-hint={tool.dataAiHint}
                     />
                 </CardContent>
                 <CardFooter className="flex justify-end gap-2">
-                    <Button variant="secondary" asChild>
-                      <a href="#" target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                      </a>
-                    </Button>
                     <Button asChild>
-                      <a href="#">
-                        <Download className="mr-2 h-4 w-4" /> Get Template
+                      <a href={tool.link}>
+                         Launch Tool <ExternalLink className="ml-2 h-4 w-4" />
                       </a>
                     </Button>
                 </CardFooter>
