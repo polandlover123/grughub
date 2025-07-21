@@ -10,17 +10,17 @@ import { GrugIcon } from './contact/grug-icon';
 const notes = [
   {
     name: "Grug Note Generation",
-    description: "Grug use big brain to make smart notes from rock scratchings.",
+    description: "Point at rock drawings. Magic computer make smart words. You look smart now.",
     href: "#",
   },
   {
     name: "Grug Note Chat",
-    description: "Talk to Grug about notes. Grug help you understand hard things.",
+    description: "Confused? Ask computer questions. It talk back. Like rock, but smarter.",
     href: "#",
   },
   {
     name: "Grug Note Repository",
-    description: "Even Grug has dumb days. This tool is made by hand, by your classmates, so Grug no forget.",
+    description: "Made by hand, by your classmates. For when Grug brain is full of rock.",
     href: "#",
   },
 ];
