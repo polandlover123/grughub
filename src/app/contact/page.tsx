@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowUpRight, Github, Globe, Instagram } from 'lucide-react';
+import { ArrowUpRight, Github, Globe, Instagram, ArrowLeft } from 'lucide-react';
 
 const contactLinks = [
   {
@@ -54,6 +54,16 @@ export default function ContactPage() {
             </Card>
           ))}
         </div>
+        
+        <div className="mt-16 text-center">
+            <Button variant="outline" asChild>
+                <Link href="/">
+                    <ArrowLeft className="mr-2 h-4 w-4" />
+                    Back to Home
+                </Link>
+            </Button>
+        </div>
+
       </main>
       <Footer />
     </div>
