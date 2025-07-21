@@ -41,7 +41,7 @@ export default function Home() {
                     </p>
                     <div className="mt-8 flex gap-2 justify-center md:justify-start">
                         <Button size="lg" asChild><Link href="#tools">View Tools</Link></Button>
-                        <Button size="lg" variant="secondary">Contact</Button>
+                        <Button size="lg" variant="secondary" asChild><Link href="/contact">Contact</Link></Button>
                     </div>
                 </div>
                 <div className="relative h-64 md:h-auto flex items-center justify-center z-10">
