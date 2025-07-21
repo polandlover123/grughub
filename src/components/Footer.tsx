@@ -8,9 +8,6 @@ export function Footer() {
             <p className="text-muted-foreground mb-4 max-w-sm mx-auto">
               Quality software for modern cavemen.
             </p>
-            <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} Caveman Software. All rights reserved.
-            </p>
           </div>
         </div>
       </div>
