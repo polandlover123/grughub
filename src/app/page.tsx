@@ -10,7 +10,7 @@ import { GrugIcon } from './contact/grug-icon';
 const notes = [
   {
     name: "Grug Note Generation",
-    description: "Point at rock drawings. Magic computer make smart words. You look smart now.",
+    description: "Grug uses big brain to create cool notes",
     href: "#",
   },
   {
