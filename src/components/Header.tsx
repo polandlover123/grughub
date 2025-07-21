@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { Github, Instagram, Search, Dna } from "lucide-react";
+import { Github, Instagram, Dna } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 export function Header() {
   return (
@@ -16,19 +15,7 @@ export function Header() {
           </Link>
         </div>
 
-        <div className="flex flex-1 items-center justify-center">
-            <div className="relative w-full max-w-sm">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                <Input placeholder="Search" className="pl-9 bg-muted/50" />
-                <div className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">
-                    <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-card px-1.5 font-mono text-[10px] font-medium opacity-100">
-                        <span className="text-sm">Ctrl</span>K
-                    </kbd>
-                </div>
-            </div>
-        </div>
-
-        <nav className="flex items-center space-x-2">
+        <nav className="flex flex-1 items-center justify-end space-x-2">
           <Button variant="link" asChild>
             <Link href="#notes">Notes</Link>
           </Button>
