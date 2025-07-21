@@ -58,6 +58,10 @@ export default function Home() {
         </section>
 
         <section id="tools" className="mb-16 md:mb-24">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold tracking-tight text-primary">Our Tools</h2>
+            <p className="text-lg text-muted-foreground">These are made by hand, by your classmates.</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {notes.map((note) => (
               <Card key={note.name} className="bg-card border-border/50 p-4 transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 flex flex-col">
