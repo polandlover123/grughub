@@ -16,9 +16,9 @@ export function Header() {
         </div>
 
         <div className="flex items-center">
-           <Button variant="ghost" asChild>
-            <Link href="/contact">Contact</Link>
-           </Button>
+            <Link href="/contact" className="text-sm font-medium text-muted-foreground transition-all duration-300 hover:text-primary hover:drop-shadow-[0_0_4px_hsl(var(--primary))]">
+                Contact
+            </Link>
         </div>
       </div>
     </header>
