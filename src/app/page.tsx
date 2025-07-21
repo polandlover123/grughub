@@ -27,22 +27,6 @@ const templates = [
   },
 ];
 
-const tools = [
-  {
-    name: "Markdown Linter",
-    description: "Ensure your markdown files are consistent and error-free. Our linter integrates directly into your CI/CD pipeline, checking for formatting issues, broken links, and more. Keep your documentation pristine with automated checks.",
-    image: "https://placehold.co/800x450.png",
-    dataAiHint: "code linter",
-  },
-  {
-    name: "Code Snippet Manager",
-    description: "A browser extension and desktop app to save, tag, and quickly access your most-used code snippets. Sync across devices and share with your team to boost productivity and maintain coding standards.",
-    image: "https://placehold.co/800x450.png",
-    dataAiHint: "code manager",
-  },
-];
-
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -97,41 +81,6 @@ export default function Home() {
                     </Button>
                 </CardFooter>
               </Card>
-            ))}
-          </div>
-        </section>
-
-        <section id="tools" className="mb-16 md:mb-24">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-headline">Our Tools</h2>
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-12">
-            {tools.map((tool) => (
-               <Card key={tool.name} className="overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10">
-                 <div className="md:grid md:grid-cols-2 md:items-center">
-                    <div className="p-0">
-                      <Image
-                        src={tool.image}
-                        alt={tool.name}
-                        width={800}
-                        height={450}
-                        className="object-cover h-full w-full"
-                        data-ai-hint={tool.dataAiHint}
-                      />
-                    </div>
-                    <div className="p-8">
-                      <CardHeader className="p-0 mb-4">
-                        <CardTitle className="text-2xl">{tool.name}</CardTitle>
-                      </CardHeader>
-                      <CardDescription className="mb-6 text-base">{tool.description}</CardDescription>
-                      <CardFooter className="p-0">
-                        <Button asChild>
-                          <a href="#">
-                            Access Tool <ArrowRight className="ml-2" />
-                          </a>
-                        </Button>
-                      </CardFooter>
-                    </div>
-                  </div>
-               </Card>
             ))}
           </div>
         </section>
