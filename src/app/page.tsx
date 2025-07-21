@@ -64,14 +64,6 @@ export default function Home() {
             {notes.map((note) => (
               <Card key={note.name} className="bg-card border-border/50 p-4 transform transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
                 <CardHeader className="p-2">
-                     <Image
-                        src={note.image}
-                        alt={note.name}
-                        width={48}
-                        height={48}
-                        className="rounded-md mb-4"
-                        data-ai-hint={note.dataAiHint}
-                    />
                     <CardTitle className="text-xl">{note.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-2 pt-0">
