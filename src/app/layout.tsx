@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'Caveman Software',
-  description: 'Your hub for robust Vitepress templates and powerful development tools.',
+  description: 'Grug tools (rhymes with grug)',
 };
 
 export default function RootLayout({
