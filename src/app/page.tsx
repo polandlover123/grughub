@@ -10,19 +10,14 @@ import { GrugIcon } from './contact/grug-icon';
 
 const notes = [
   {
-    name: "Grug Note Repository",
-    description: "Made by hand, by your classmates. For when Grug brain is full of rock.",
-    href: "https://study.cavemansoftware.org",
-  },
-  {
-    name: "Grug Note Chat",
-    description: "Confused? Ask computer questions. It talk back. Like rock, but smarter.",
-    href: "https://grugchat.cavemansoftware.org",
-  },
-  {
     name: "Grug Note Generation",
     description: "Grug uses big brain to create cool notes",
     href: "https://grugnotes.cavemansoftware.org",
+  },
+  {
+    name: "Grug Note Repository",
+    description: "Made by hand, by your classmates. For when Grug brain is full of rock.",
+    href: "https://study.cavemansoftware.org",
   },
 ];
 
@@ -53,7 +48,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold tracking-tight text-primary">Grug's Big Rocks</h2>
             <p className="text-muted-foreground mt-2">Tools to make you less dumb.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {notes.map((note) => (
               <Card key={note.name} className="bg-card border-border/50 transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/20 flex flex-col">
                 <CardHeader>
@@ -78,3 +73,4 @@ export default function Home() {
     </div>
   );
 }
+
