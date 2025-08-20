@@ -10,14 +10,14 @@ import { GrugIcon } from './contact/grug-icon';
 
 const notes = [
   {
-    name: "Grug Note Generation",
-    description: "Grug uses big brain to create cool notes",
-    href: "https://grugnotes.cavemansoftware.org",
-  },
-  {
     name: "Grug Note Repository",
     description: "Made by hand, by your classmates. For when Grug brain is full of rock.",
     href: "https://study.cavemansoftware.org",
+  },
+  {
+    name: "Grug Note Generation",
+    description: "Grug uses big brain to create cool notes",
+    href: "https://grugnotes.cavemansoftware.org",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function Home() {
              <div className="flex justify-center items-center my-8 animate-in fade-in duration-300 delay-200">
                 <GrugIcon className="h-40 w-40" />
             </div>
-            <div className="mt-8 flex gap-4 justify-center animate-in fade-in duration-300 delay-300">
+            <div className="mt-8 flex gap-4 justify-center animate-in fade-in duration-300">
                 <Button size="lg" variant="outline" asChild className="rounded-full"><Link href="#tools">View Tools</Link></Button>
                 <Button size="lg" variant="default" asChild className="rounded-full"><Link href="/contact">Contact Grug</Link></Button>
             </div>
@@ -48,7 +48,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold tracking-tight text-primary">Grug's Big Rocks</h2>
             <p className="text-muted-foreground mt-2">Tools to make you less dumb.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {notes.map((note) => (
               <Card key={note.name} className="bg-card border-border/50 transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/20 flex flex-col">
                 <CardHeader>
